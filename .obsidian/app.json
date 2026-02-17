@@ -1,0 +1,9 @@
+{
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": true,
+  "userIgnoreFilters": [
+    "scripts/",
+    "tools/"
+  ],
+  "attachmentFolderPath": "public/images"
+}
