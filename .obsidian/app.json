@@ -1,5 +1,5 @@
 {
-  "newLinkFormat": "shortest",
+  "newLinkFormat": "absolute",
   "useMarkdownLinks": true,
   "userIgnoreFilters": [
     "scripts/",
