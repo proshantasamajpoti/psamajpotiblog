@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/templates/bits-gallery.md",
+                "file": "src/content/bits/bits-2026-02-17.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "bits-gallery"
+              "title": "bits-2026-02-17"
             }
           }
         ]
@@ -186,11 +186,11 @@
   },
   "active": "cb7a87af663e6975",
   "lastOpenFiles": [
-    "src/content/bits/bits-2026-02-17.md",
-    "src/content/bits/bits-2026-02-03-2230.md",
     "src/content/bits/bits-2026-02-03-0101.md",
-    "src/content/bits/2026-02-17-.md",
+    "src/content/bits/bits-2026-02-03-2230.md",
+    "src/content/bits/bits-2026-02-17.md",
     "src/content/templates/bits-gallery.md",
+    "src/content/bits/2026-02-17-.md",
     "src/content/templates/bits",
     "src/content/templates"
   ]
