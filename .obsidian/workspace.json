@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/bits/bits-2026-02-17.md",
+                "file": "src/content/bits/bits-2026-02-03-2230.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for bits-2026-02-17"
+              "title": "Backlinks for bits-2026-02-03-2230"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/bits/bits-2026-02-17.md",
+                "file": "src/content/bits/bits-2026-02-03-2230.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from bits-2026-02-17"
+              "title": "Outgoing links from bits-2026-02-03-2230"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/bits/bits-2026-02-17.md",
+                "file": "src/content/bits/bits-2026-02-03-2230.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of bits-2026-02-17"
+              "title": "Outline of bits-2026-02-03-2230"
             }
           }
         ]
@@ -188,8 +188,8 @@
   "lastOpenFiles": [
     "src/content/bits/bits-2026-02-03-2230.md",
     "src/content/bits/bits-2026-02-03-0101.md",
-    "src/content/bits/2026-02-17-.md",
     "src/content/bits/bits-2026-02-17.md",
+    "src/content/bits/2026-02-17-.md",
     "src/content/templates/bits-gallery.md",
     "src/content/templates/bits",
     "src/content/templates"
