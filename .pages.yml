@@ -1,52 +1,34 @@
-# .pages.yml - Optimized for Astro-Whono
+# .pages.yml - "Safe" version for Astro-Whono
 media:
   input: public
   output: /
 
 content:
-  # ESSAYS (Long-form posts)
   - name: essay
     label: Essays
     path: src/content/essay
     type: collection
     fields:
-      - { name: title, label: Title, type: string }
+      - { name: title, label: Title, type: string, default: "New Post" } # Default prevents undefined
       - { name: date, label: Date, type: date }
       - { name: draft, label: Draft, type: boolean, default: false }
       - { name: archive, label: Show in Archive, type: boolean, default: true }
-      - { name: slug, label: Custom Slug (Optional), type: string }
-      - { name: badge, label: List Badge (e.g. Featured), type: string }
-      - { name: body, label: Content, type: rich-text }
+      - { name: slug, label: Custom Slug, type: string, required: false } # Set to false
+      - { name: body, label: Content, type: rich-text, default: "" } # Default prevents undefined
 
-  # BITS (Short updates/micro-blogging)
   - name: bits
     label: Bits
     path: src/content/bits
     type: collection
     fields:
       - { name: date, label: Date & Time, type: datetime }
-      - { name: draft, label: Draft, type: boolean, default: false }
-      - { name: tags, label: Tags, type: list }
+      - { name: tags, label: Tags, type: list, required: false }
       - name: images
-        label: Images (Gallery)
+        label: Images
         type: list
+        required: false # This is crucial if some bits don't have images
         fields:
-          - { name: src, label: Image Path, type: image }
-          - { name: width, label: Width (px), type: number }
-          - { name: height, label: Height (px), type: number }
-      - name: author
-        label: Author Override
-        type: object
-        fields:
-          - { name: name, label: Name, type: string }
-          - { name: avatar, label: Avatar Path, type: image }
-      - { name: body, label: Content, type: rich-text }
-
-  # MEMO (Single Page)
-  - name: memo
-    label: Memo
-    path: src/content/memo
-    type: document
-    fields:
-      - { name: title, label: Title, type: string, default: Memo }
-      - { name: body, label: Content, type: rich-text }
+          - { name: src, label: Image, type: image }
+          - { name: width, label: Width, type: number, default: 800 }
+          - { name: height, label: Height, type: number, default: 600 }
+      - { name: body, label: Content, type: rich-text, default: "" }
