@@ -1,0 +1,52 @@
+# .pages.yml - Optimized for Astro-Whono
+media:
+  input: public
+  output: /
+
+content:
+  # ESSAYS (Long-form posts)
+  - name: essay
+    label: Essays
+    path: src/content/essay
+    type: collection
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: date, label: Date, type: date }
+      - { name: draft, label: Draft, type: boolean, default: false }
+      - { name: archive, label: Show in Archive, type: boolean, default: true }
+      - { name: slug, label: Custom Slug (Optional), type: string }
+      - { name: badge, label: List Badge (e.g. Featured), type: string }
+      - { name: body, label: Content, type: rich-text }
+
+  # BITS (Short updates/micro-blogging)
+  - name: bits
+    label: Bits
+    path: src/content/bits
+    type: collection
+    fields:
+      - { name: date, label: Date & Time, type: datetime }
+      - { name: draft, label: Draft, type: boolean, default: false }
+      - { name: tags, label: Tags, type: list }
+      - name: images
+        label: Images (Gallery)
+        type: list
+        fields:
+          - { name: src, label: Image Path, type: image }
+          - { name: width, label: Width (px), type: number }
+          - { name: height, label: Height (px), type: number }
+      - name: author
+        label: Author Override
+        type: object
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: avatar, label: Avatar Path, type: image }
+      - { name: body, label: Content, type: rich-text }
+
+  # MEMO (Single Page)
+  - name: memo
+    label: Memo
+    path: src/content/memo/index.md
+    type: document
+    fields:
+      - { name: title, label: Title, type: string, default: Memo }
+      - { name: body, label: Content, type: rich-text }
