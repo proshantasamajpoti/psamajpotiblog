@@ -45,7 +45,7 @@ content:
   # MEMO (Single Page)
   - name: memo
     label: Memo
-    path: src/content/memo/index.md
+    path: src/content/memo
     type: document
     fields:
       - { name: title, label: Title, type: string, default: Memo }
