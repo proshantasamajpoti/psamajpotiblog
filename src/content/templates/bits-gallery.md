@@ -1,5 +1,5 @@
 ---
-date: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
+date: <% tp.date.now("YYYY-MM-DDTHH:mm:ss") %>
 tags:
   - 
 images:
